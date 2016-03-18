@@ -1,4 +1,4 @@
-package com.iteso.factory;
+package com.iteso.factory.Installers;
 
 /**
  * Created by rvillalobos on 3/17/16.

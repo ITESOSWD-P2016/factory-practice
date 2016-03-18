@@ -1,4 +1,6 @@
-package com.iteso.factory;
+package com.iteso.factory.Installers.impl.Android;
+
+import com.iteso.factory.Installers.JamaiconInstaller;
 
 /**
  * Created by rvillalobos on 3/17/16.
