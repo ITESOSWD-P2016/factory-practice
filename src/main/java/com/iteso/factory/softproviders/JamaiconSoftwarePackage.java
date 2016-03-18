@@ -1,4 +1,8 @@
-package com.iteso.factory;
+package com.iteso.factory.softproviders;
+
+import com.iteso.factory.installers.JamaiconInstaller;
+import com.iteso.factory.softproviders.JamaiconInstructions;
+import com.iteso.factory.softproviders.JamaiconLicense;
 
 /**
  * Created by rvillalobos on 3/17/16.
