@@ -1,5 +1,7 @@
 package com.iteso.factory;
 
+import com.iteso.factory.installer.JamaiconInstaller;
+
 /**
  * Created by rvillalobos on 3/17/16.
  */
