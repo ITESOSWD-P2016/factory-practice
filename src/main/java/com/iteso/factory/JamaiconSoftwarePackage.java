@@ -1,16 +1,16 @@
 package com.iteso.factory;
 
-import com.iteso.factory.installer.JamaiconInstaller;
+import com.iteso.factory.installer.JamaiconInst;
 
 /**
  * Created by rvillalobos on 3/17/16.
  */
 public class JamaiconSoftwarePackage {
-    private JamaiconInstaller installer;
+    private JamaiconInst installer;
     private JamaiconLicense license;
     private JamaiconInstructions instructions;
 
-    public void setInstaller(JamaiconInstaller installer) {
+    public void setInstaller(JamaiconInst installer) {
         this.installer = installer;
     }
 

@@ -1,23 +1,23 @@
 package com.iteso.factory.provider.impl;
 
-import com.iteso.factory.installer.impl.JamaiconGameAndroidInstaller;
-import com.iteso.factory.installer.JamaiconInstaller;
-import com.iteso.factory.installer.impl.JamaiconSportsAndroidInstaller;
-import com.iteso.factory.installer.impl.JamaiconStatsAndroidInstaller;
-import com.iteso.factory.installer.impl.JamaiconStoreAndroidInstaller;
+import com.iteso.factory.installer.JamaiconInst;
+import com.iteso.factory.installer.impl.JamaiconGameAndroidInst;
+import com.iteso.factory.installer.impl.JamaiconSportsAndroidInst;
+import com.iteso.factory.installer.impl.JamaiconStatsAndroidInst;
+import com.iteso.factory.installer.impl.JamaiconStoreAndroidInst;
 import com.iteso.factory.provider.JamaiconSoftProvider;
 
 public class JamaiconAndroidSoftProvider extends JamaiconSoftProvider {
 
-	public JamaiconInstaller getJamaiconInst(String app) {
+	public JamaiconInst getJamaiconInst(String app) {
             if (app.equals("sports"))
-                return new JamaiconSportsAndroidInstaller();
+                return new JamaiconSportsAndroidInst();
             else if (app.equals("stats"))
-                return new JamaiconStatsAndroidInstaller();
+                return new JamaiconStatsAndroidInst();
             else if (app.equals("store"))
-            	return new JamaiconStoreAndroidInstaller();
+            	return new JamaiconStoreAndroidInst();
             else if (app.equals("game"))
-            	return new JamaiconGameAndroidInstaller();
+            	return new JamaiconGameAndroidInst();
             else
             	return null;
 	}

@@ -1,24 +1,24 @@
 package com.iteso.factory.provider.impl;
 
-import com.iteso.factory.installer.impl.JamaiconGameWindowsPhoneInstaller;
-import com.iteso.factory.installer.JamaiconInstaller;
-import com.iteso.factory.installer.impl.JamaiconSportsWindowsPhoneInstaller;
-import com.iteso.factory.installer.impl.JamaiconStatsWindowsPhoneInstaller;
-import com.iteso.factory.installer.impl.JamaiconStoreWindowsPhoneInstaller;
+import com.iteso.factory.installer.JamaiconInst;
+import com.iteso.factory.installer.impl.JamaiconGameWindowsPhoneInst;
+import com.iteso.factory.installer.impl.JamaiconSportsWindowsPhoneInst;
+import com.iteso.factory.installer.impl.JamaiconStatsWindowsPhoneInst;
+import com.iteso.factory.installer.impl.JamaiconStoreWindowsPhoneInst;
 import com.iteso.factory.provider.JamaiconSoftProvider;
 
 public class JamaiconWindowsPhoneSoftProvider extends JamaiconSoftProvider {
 
 	@Override
-	public JamaiconInstaller getJamaiconInst(String app) {
+	public JamaiconInst getJamaiconInst(String app) {
 		if (app.equals("sports"))
-            return new JamaiconSportsWindowsPhoneInstaller();
+            return new JamaiconSportsWindowsPhoneInst();
         else if (app.equals("stats"))
-            return new JamaiconStatsWindowsPhoneInstaller();
+            return new JamaiconStatsWindowsPhoneInst();
         else if (app.equals("store"))
-        	return new JamaiconStoreWindowsPhoneInstaller();
+        	return new JamaiconStoreWindowsPhoneInst();
         else if (app.equals("game"))
-        	return new JamaiconGameWindowsPhoneInstaller();
+        	return new JamaiconGameWindowsPhoneInst();
         else
         	return null;
 	}
